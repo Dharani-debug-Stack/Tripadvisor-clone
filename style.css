@@ -325,6 +325,16 @@ color: white;
 padding: 5px;
 border-radius: 50px;
 }
+.arrow{
+  position: absolute;
+  right: 0;
+  top: 90px;
+  border-radius: 50px;
+}
+.arrow i{
+  font-size: 40px;
+  color: black;
+}
 /* MEDIA QUERY */
 
 @media screen and (max-width:600px) {
