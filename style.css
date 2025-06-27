@@ -101,6 +101,7 @@ body {
   justify-content: center;
   overflow-x: auto;
   scroll-behavior: smooth;
+  cursor: pointer;
 }
 
 .contents::-webkit-scrollbar {
@@ -260,7 +261,7 @@ body {
 }
 
 /*FINDTHINGS TO DO  */
-.to_do__container{
+.to_do__container,.paris__container{
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20%;
@@ -290,6 +291,40 @@ left: 10px;
 color: white;
 }
 
+/* paris container */
+.paris_image__container{
+  width: 70%;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-left: 15%;
+  cursor: pointer;
+  position: relative;
+}
+.paris_image__container::-webkit-scrollbar{
+  display: none;
+}
+.paris_img_sub{
+  position: relative;
+}
+
+.paris_img_sub img{
+  width: 300px;
+  flex-shrink: 0; 
+  border-radius: 10px;
+ 
+}
+.heart{
+position:absolute;
+z-index: 1;
+right: 10px;
+top: 10px;
+background-color: black;
+color: white;
+padding: 5px;
+border-radius: 50px;
+}
 /* MEDIA QUERY */
 
 @media screen and (max-width:600px) {
@@ -347,7 +382,7 @@ color: white;
     flex-wrap: wrap;
     left: 15%;
   }
-  .to_do__container{
+  .to_do__container,.paris__container{
     margin-left: 5%;
   }
 
