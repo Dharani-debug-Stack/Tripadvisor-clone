@@ -20,7 +20,7 @@ body {
   padding: 20px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 
@@ -70,6 +70,11 @@ body {
   border-radius: 20px;
   width: fit-content;
   white-space: nowrap;
+  cursor: pointer;
+}
+.nav_s3:hover{
+  background-color: gray;
+  color: black;
 }
 
 .nav_icons {
@@ -120,8 +125,9 @@ body {
   object-fit: cover;
 
 }
+
 /* SEARCH BAR */
-.search_bar{
+.search_bar {
   margin: 4%;
   display: flex;
   align-items: center;
@@ -129,18 +135,20 @@ body {
   margin-left: 25%;
   padding: 5px;
   border-radius: 30px;
-  gap:5px;
+  gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   justify-content: space-between;
+
 }
-.search_bar input{
+
+.search_bar input {
   border: none;
   outline: none;
 
 }
 
-.search_bar button{
-  margin-right:0;
+.search_bar button {
+  margin-right: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
@@ -148,19 +156,22 @@ body {
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  
+
 }
-.search_bar button:hover{
+
+.search_bar button:hover {
   background-color: rgb(128, 164, 128);
 }
+
 /* front banner images style */
-.front_container{
+.front_container {
   position: relative;
   width: 500px;
   height: 350px;
   overflow: hidden;
 }
-.sub_desc{
+
+.sub_desc {
   position: absolute;
   bottom: 5px;
   left: 20px;
@@ -171,7 +182,8 @@ body {
   border: 1px solid black;
   border-radius: 20px;
 }
-.sub_container{
+
+.sub_container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -179,6 +191,7 @@ body {
   opacity: 1;
   animation: showSlides 3s infinite;
 }
+
 .sub_container:nth-child(1) {
   animation-delay: 1s;
 }
@@ -190,50 +203,100 @@ body {
 .sub_container:nth-child(3) {
   animation-delay: 3s;
 }
- @keyframes showSlides {
-  0% { opacity: 1; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  40% { opacity: 1; }
-  100% { opacity: 0; }
- }
 
- .travel_container{
+@keyframes showSlides {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.travel_container {
   padding: 20px;
   background-color: tomato;
   gap: 20px;
   width: 60%;
   display: flex;
-left: 20%;
-position: relative;
-justify-content: center;
-align-items: center;
-border-radius: 10px;
- }
- .font_heading{
+  left: 20%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.font_heading {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
- }
- .front_text_container hr{
+}
+
+.front_text_container hr {
   display: none;
- }
- .front_text_container button{
+}
+
+.front_text_container button {
   background-color: black;
   color: white;
   padding: 10px;
   border: none;
   border-radius: 10px;
-margin-top: 20px;
-cursor: pointer;
- }
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*FINDTHINGS TO DO  */
+.to_do__container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+}
+.things_img__container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap:wrap ;
+  gap: 20px;
+  width: 100%;
+}
+.img_con__one:hover{
+opacity: 0.5;
+}
+.img_con__one{
+  position: relative;
+}
+.img_con__one img{
+  width: 300px;
+  border-radius: 20px;
+}
+.img_con__one h2{
+position: absolute;
+bottom: 10px;
+left: 10px;
+color: white;
+}
 
 /* MEDIA QUERY */
 
 @media screen and (max-width:600px) {
-  body{
+  body {
     font-size: medium;
   }
+
   .nav_s1 img {
     width: 150px;
   }
@@ -257,29 +320,47 @@ cursor: pointer;
   .contents {
     justify-content: flex-start;
   }
-  .content_img:hover {
-  border-bottom: 2px solid black;
 
-}
-.search_bar{
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-  width: 70%;
-  margin-left: 5%;
-}
-.one{
-  padding-bottom: 10px;
-  border-bottom: solid 2px gray;  
-}
-.vertical_line{
-  display: none;
-}
-.travel_container{
-  flex-wrap: wrap;
-  left: 15%;
-}
-.front_text_container hr{
-  display: block;
-}
+  .content_img:hover {
+    border-bottom: 2px solid black;
+
+  }
+
+  .search_bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    width: 70%;
+    margin-left: 5%;
+  }
+
+  .one {
+    padding-bottom: 10px;
+    border-bottom: solid 2px gray;
+  }
+
+  .vertical_line {
+    display: none;
+  }
+
+  .travel_container {
+    flex-wrap: wrap;
+    left: 15%;
+  }
+  .to_do__container{
+    margin-left: 15%;
+  }
+
+  .front_text_container hr {
+    display: block;
+  }
+  .things_img__container{
+   margin-left: 0px;
+   flex-wrap: wrap;
+  }
+  .img_con__one img{
+    width: 150px;
+    
+
+  }
 }
