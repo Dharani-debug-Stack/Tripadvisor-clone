@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav_s1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav_s1 img {
+  width: 200px;
+}
+
+.menu_icon i {
+  display: none;
+
+}
+
+.nav_s2 ul {
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.list_one:hover {
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.last_list:hover {
+  text-decoration: underline;
+}
+
+.nav_section3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_s3 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.nav_icons {
+  display: flex;
+  gap: 7px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav_icons:hover {
+  background-color: gainsboro;
+}
+
+.container_section {
+  margin: 30px;
+  text-align: center;
+}
+
+/* contents */
+.contents {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.contents::-webkit-scrollbar {
+  display: none;
+}
+
+.content_img:hover {
+  border-bottom: 2px solid black;
+
+}
+
+.content_img {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.content_img img {
+  object-fit: cover;
+
+}
+/* SEARCH BAR */
+.search_bar{
+  margin: 4%;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+  padding: 5px;
+  border-radius: 30px;
+  gap:5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: space-between;
+}
+.search_bar input{
+  border: none;
+  outline: none;
+
+}
+
+.search_bar button{
+  margin-right:0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  
+}
+.search_bar button:hover{
+  background-color: rgb(128, 164, 128);
+}
+/* front banner images style */
+.front_container{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+.sub_desc{
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  z-index: 1;
+  background-color: tomato;
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.sub_container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 1;
+  animation: showSlides 3s infinite;
+}
+.sub_container:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.sub_container:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.sub_container:nth-child(3) {
+  animation-delay: 3s;
+}
+ @keyframes showSlides {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 1; }
+  100% { opacity: 0; }
+ }
+
+ .travel_container{
+  padding: 20px;
+  background-color: tomato;
+  gap: 20px;
+  width: 60%;
+  display: flex;
+left: 20%;
+position: relative;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+ }
+ .font_heading{
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+ }
+ .front_text_container hr{
+  display: none;
+ }
+ .front_text_container button{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+margin-top: 20px;
+cursor: pointer;
+ }
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:600px) {
+  body{
+    font-size: medium;
+  }
+  .nav_s1 img {
+    width: 150px;
+  }
+
+  .menu_icon i {
+    display: block;
+  }
+
+  .nav_s2 ul {
+    display: none;
+  }
+
+  .container_section {
+    display: none;
+  }
+
+  .nav_icons {
+    display: none;
+  }
+
+  .contents {
+    justify-content: flex-start;
+  }
+  .content_img:hover {
+  border-bottom: 2px solid black;
+
+}
+.search_bar{
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  width: 70%;
+  margin-left: 5%;
+}
+.one{
+  padding-bottom: 10px;
+  border-bottom: solid 2px gray;  
+}
+.vertical_line{
+  display: none;
+}
+.travel_container{
+  flex-wrap: wrap;
+  left: 15%;
+}
+.front_text_container hr{
+  display: block;
+}
+}
