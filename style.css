@@ -585,6 +585,12 @@ width: 200px;
   .arrow{
     display: none;
   }
+  .container{
+    flex-direction: column;
+  }
+  .image-box{
+    margin-left: 40px;
+  }
       .footer-column {
         margin-bottom: 25px;
       }
