@@ -586,6 +586,7 @@ width: 200px;
   }
   .container{
     flex-direction: column;
+    margin-left: 2px;
   }
   .image-box{
     margin-left: 40px;
