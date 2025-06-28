@@ -282,7 +282,7 @@ opacity: 0.5;
 }
 .img_con__one img{
   width: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .img_con__one h2{
 position: absolute;
@@ -299,6 +299,7 @@ color: white;
   overflow-x: auto;
   scroll-behavior: smooth;
   margin-left: 15%;
+  margin-right: 15%;
   cursor: pointer;
   position: relative;
 }
@@ -325,16 +326,8 @@ color: white;
 padding: 5px;
 border-radius: 50px;
 }
-.arrow{
-  position: absolute;
-  right: 0;
-  top: 90px;
-  border-radius: 50px;
-}
-.arrow i{
-  font-size: 40px;
-  color: black;
-}
+
+
 /* MEDIA QUERY */
 
 @media screen and (max-width:600px) {
@@ -405,7 +398,16 @@ border-radius: 50px;
   }
   .img_con__one img{
     width: 150px;
-    
+  }
+  .img_con__one h2{
+    font-size: medium;
+  }
+  .paris_image__container{
+    width: 100%;
+    margin-left: 3px;
 
+  }
+  .paris_img_sub img{
+width: 200px;
   }
 }
