@@ -261,7 +261,7 @@ body {
 }
 
 /*FINDTHINGS TO DO  */
-.to_do__container,.paris__container{
+.to_do__container,.paris__container,.places h2{
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20%;
@@ -326,7 +326,35 @@ color: white;
 padding: 5px;
 border-radius: 50px;
 }
-
+.places{
+  background-color: rgb(216, 202, 184);
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.iconic_container img{
+width: 300px;
+height: 250px;
+border-radius: 10px;
+}
+.iconic_container img:hover{
+  opacity: 0.5;
+}
+.iconic_place__container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.iconic_container{
+  position: relative;
+  
+}
+.iconic_container h3{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
 
 /* MEDIA QUERY */
 
@@ -385,7 +413,7 @@ border-radius: 50px;
     flex-wrap: wrap;
     left: 15%;
   }
-  .to_do__container,.paris__container{
+  .to_do__container,.paris__container,.places h2{
     margin-left: 5%;
   }
 
@@ -404,10 +432,16 @@ border-radius: 50px;
   }
   .paris_image__container{
     width: 100%;
-    margin-left: 3px;
+    margin-left: 5px;
 
   }
   .paris_img_sub img{
 width: 200px;
+  }
+  .iconic_place__container{
+  flex-wrap: wrap;
+  }
+  .iconic_container img{
+    width: 150px;
   }
 }
