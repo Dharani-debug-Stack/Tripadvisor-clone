@@ -329,7 +329,7 @@ border-radius: 50px;
 .places{
   background-color: rgb(216, 202, 184);
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .iconic_container img{
 width: 300px;
@@ -586,7 +586,7 @@ width: 200px;
   }
   .container{
     flex-direction: column;
-    margin-left: 2px;
+    margin:  50px auto;
   }
   .image-box{
     margin-left: 40px;
